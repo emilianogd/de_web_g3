@@ -2,7 +2,7 @@
 <html lang="Es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>G3</title>
     <link rel="stylesheet" href="styles/styles.css">
@@ -13,11 +13,11 @@
 </head>
 
 <body>
-    <header>
-        <center>
-        <nav class=navegador>
+    <header class="header">
+        <div class="menu logo-nav">
+                <a href="index.html"><img src="images/g3.png" class="logo"></a>   
+        <nav class="navegador">
             <ul>
-                <li><a href="index.html"><img src="images/g3.png" width="50px" height="50px"></a></li>
                 <li><a href="pages/comunidad.html">COMUNIDAD</a></li>
                 <li><a href="pages/juegos.html">JUEGOS</a></li>
                 <li><a href="pages/noticias.html">NOTICIAS</a></li>
@@ -30,17 +30,18 @@
                 </section></li>   
                 <li><a href="pages/iniciarSesión.html">&#128100</a></li>
             </ul>
-        </nav></center>
+        </nav></div>
     </header>
 
+    <div class="main">
     <aside>
-        <leable class="titulos">Categorías</leable>
+        <div class="titulos">Categorías</div>
         <ul>  
             <li><a href="Mas_vendidos.html">Mas vendidos</a></li>  
             <li><a href="Novedades.html">Novedades</a></li>
             <li><a href="De_la_casa.html">De la casa</a></li>
         </ul>     
-        <leable class="titulos">Géneros</leable></li>
+        <div class="titulos">Géneros</div></li>
         <ul>
             <li><a href="Acción.html">Acción</a></li>
             <li><a href="Pelea.html">Pelea</a></li>
@@ -50,7 +51,7 @@
     </aside>
 
     <div class="destacado">
-        <center>    
+        <div class="menu">   
             <h3>Destacados:</h3>
             <a href="pages/juego1.html"><img src="images/Juegos/Megaman/megamanprincipal.jpg" width="504" height="250" alt="Juego aleatorio" height="100%"></a>
             <a href="pages/juego1.html"><img src="images/Juegos/GTAV/GTAVTITULO.jpg" width="250" height="250" alt="Juego aleatorio" height="100%"></a>
@@ -58,11 +59,11 @@
             <a href="pages/juego1.html"><img src="images/Juegos/CoD/CoDTITULO.png" width="250" height="250" alt="Juego aleatorio" height="100%"></a>
             <a href="pages/juego1.html"><img src="images/Juegos/Skyrim/skyrimTITULO.jpg" width="250" height="250" alt="Juego aleatorio" height="100%"></a>
             <a href="pages/juego1.html"><img src="images/Juegos/BATTLEFIELDV/BATTLEFIELDVTITULO.png" width="250" height="250" alt="Juego aleatorio" height="100%"></a>
-        </center><br>
+        </div><br>
     </div>
 
     <table class="ofertas">
-        <tr><th><h3><center>Ofertas de la semana:</center></h3></th></tr>
+        <tr><th><h3><div>Ofertas de la semana:</div></h3></th></tr>
         <tr><th><a href="pages/juego1.html"><img src="http://via.placeholder.com/250x350" alt="Juego aleatorio" height="100%"></a></th>
             <th><a href="pages/juego1.html"><img src="http://via.placeholder.com/250x350" alt="Juego aleatorio" height="100%"></a></th><th>
             <table>
@@ -71,6 +72,7 @@
             </table></th></tr>
     </table>
 
+</div>
 
     <footer> 
         <div class="contenedor-total">

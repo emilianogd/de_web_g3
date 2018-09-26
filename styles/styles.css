@@ -4,33 +4,82 @@
 body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #ADABAB;
+    margin: 0;
     
 }
 /*CABEZA*/
-.navegador{
-    margin: auto;
-    background: #161616;
-    margin: 10px;
-    padding: 5px;
+.header{
+background: #333;
+color:white;
+padding: 2px 0;
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
 }
-
-.navegador li{
-    padding: 20px;
-}
-
-.navegador ul li {
+.header a {
+    color: white;
+    text-decoration: none;
     display: inline-block;
 }
+.menu{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo-nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
+.navegador ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ 
+.navegador ul li {
+    display: inline-block;
+
+}
+.navegador ul li a:hover {
+    background:rgb(59, 59, 59);
+}
 .navegador ul li a {
-    color: aliceblue;
-    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.5s linear;
+    border-radius: 2rem;
+}
+.logo{
+max-width: 10%; 
+display: block;
+}
+.main{
+    padding-top: 13rem; 
 }
 
-.Buscador button{
-    background: #151515;
-}
+@media only screen and (max-width:767px) {
+   .navegador {
+       width: 100%;
+   }
+    .navegador ul li {
+        display: block;
     
+    }
+    .navegador ul li a:hover {
+        background:rgb(59, 59, 59);
+    }
+    .navegador ul li a {
+        display: block;
+        padding: 0.5rem 0rem;
+        transition: all 0.5s linear;
+        border-radius: 2rem;
+    }
+}
+
 /*ASIDE*/
 aside {
     border-radius: 10px; 
