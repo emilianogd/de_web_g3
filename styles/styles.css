@@ -11,7 +11,7 @@ body{
 .header{
 background: #333;
 color:white;
-padding: 2px 0;
+padding: 1rem 0;
 position: fixed;
 left: 0;
 top: 0;
@@ -24,9 +24,10 @@ width: 100%;
 }
 .menu{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
+
 .logo-nav{
     display:flex;
     justify-content: space-between;
@@ -42,6 +43,7 @@ width: 100%;
  
 .navegador ul li {
     display: inline-block;
+    justify-content: flex-end;
 
 }
 .navegador ul li a:hover {
@@ -53,12 +55,9 @@ width: 100%;
     transition: all 0.5s linear;
     border-radius: 2rem;
 }
-.logo{
-max-width: 10%; 
-display: block;
-}
+
 .main{
-    padding-top: 13rem; 
+    padding-top: 10rem; 
 }
 
 @media only screen and (max-width:767px) {
@@ -230,7 +229,7 @@ footer {
     margin-left: 10px;
 }
 /*CUENTA*/
-nav{
+/*nav{
     padding: 40px;
     display: center;
     margin-left: 200px;
@@ -239,3 +238,4 @@ nav{
 .cuentap2{
     
 }
+*/
