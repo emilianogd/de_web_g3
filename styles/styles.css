@@ -9,13 +9,13 @@ body{
 }
 /*CABEZA*/
 .header{
-background: #333;
-color:white;
-padding: 1rem 0;
-position: fixed;
-left: 0;
-top: 0;
-width: 100%;
+    background: #333;
+    color:white;
+    padding: 1rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 .header a {
     color: white;
