@@ -55,6 +55,64 @@ body{
     transition: all 0.5s linear;
     border-radius: 2rem;
 }
+/*BUSCADOR*/
+form {
+    padding: 5%;
+    width: 300px;
+    margin: 0 auto;
+}
+
+fieldset {
+    display: inline-block;
+    background: white;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 0 0 0 40px; 
+}
+input, button {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 40px;
+    padding: 0px;
+}
+
+input {
+    color:gray;
+    border:none;
+    z-index: 2;
+}
+
+button {
+    font-size: 1.4em;
+    width: 40px;
+    border:none;
+    background: #333;
+    transform: translate(-50px,0);
+}
+
+.fa-search {
+    color:#bbb;
+    transform: translate(-190px,0);
+    transition: all .1s ease-in-out;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus + button {
+    transform: translate(0,0);
+    transition-duration: .3s;
+
+}
+
+input:focus + button .fa {
+    color:white;
+    transform: translate(0,0);
+    transition-duration: .4s;
+}
 
 .main{
     padding-top: 10rem; 
@@ -228,14 +286,75 @@ footer {
 .titulomarco{
     margin-left: 10px;
 }
-/*CUENTA*/
-/*nav{
-    padding: 40px;
-    display: center;
-    margin-left: 200px;
-    margin-top: 50px;
+
+/*LOGIN*/
+
+.login-box {
+width: 320px;
+height: 420px;
+background: black;
+color: #fff;
+top: 50%;
+left: 50%;
+position: absolute;
+transform: translate(-50% , -50%);
+box-sizing: border-box;
+padding: 70px 30px;
 }
-.cuentap2{
-    
+
+.login-box .avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
 }
-*/
+.login-box h1{
+margin: 0;
+padding: 0 0 20px;
+text-align: center;
+font-size: 22px;
+}
+.login-box label{
+margin: 0;
+padding: 0;
+font-weight: bold;
+display: block;
+}
+
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+.login-box input[type="submit"]{
+    border:none;
+    outline:none;
+    height: 40px;
+    background: #060061;
+    color:white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.login-box a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color:darkgray;
+}
+
+.login-box a:hover{
+    color:white;
+}
