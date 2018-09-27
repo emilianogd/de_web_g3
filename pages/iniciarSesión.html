@@ -1,54 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>G3 - Iniciar Sesión</title>
-    <link rel="shortcut icon" href="../images/g3.ico">
-    <link rel="stylesheet" href="../styles/styles.css">    
-</head>
-<style>
-body{
-    margin: 0;
-    padding: 0;
-    background: url(../images/fondo.jpg) no-repeat center top;
-    background-size: cover;
-    font-family: sans-serif;
-    height: 100vh;
-}
-    </style>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
+    <head>
         <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>G3 - LogIn</title>
-    <link rel="shortcut icon" href="../images/g3.ico">
-    <link rel="stylesheet" href="../styles/estilo.css">  
-<body>
-    
-<div class="login-box">
-    <img class="avatar" src="../images/g3.png" alt="G3 LOGO">
-        <h1>Ingrese aquí</h1>
-    <form>
-        <!--USERNAME-->
-        <label for="Nombre_de_usuario">Usuario</label>
-        <input type="text" id="Nombre_de_usuario" maxlength="30" placeholder="Ingrese Usuario" name="Nombre de la cuenta">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>G3 - Iniciar Sesión</title>
+        <link rel="shortcut icon" href="../images/g3.ico">
+        <link rel="stylesheet" href="../styles/styles.css">    
+    </head>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: url(../images/fondo.jpg) no-repeat center top;
+            background-size: cover;
+            font-family: sans-serif;
+            height: 100vh;
+        }
+    </style>
 
-        <!--PASSWORD-->
-        <label for="password">Constraseña</label>
-        <input type="password" maxlength="30" placeholder="Ingrese Constraseña" name="Constraseña">
+    <body>    
+        <div class="login-box">
+            <a href="../index.html"><img class="avatar" src="../images/g3.png" alt="G3 LOGO"></a>
+                <h1>Ingrese aquí</h1>
+            <form>
+                <!--USERNAME-->
+                <label for="Nombre_de_usuario">Usuario</label>
+                <input type="text" id="Nombre_de_usuario" required maxlength="30" placeholder="Ingrese Usuario" name="Nombre de la cuenta">
 
-        <input type="submit" value="Iniciar sesión">       
+                <!--PASSWORD-->
+                <label for="password">Constraseña</label>
+                <input type="password" required maxlength="30" placeholder="Ingrese Constraseña" name="Constraseña">
 
-        <a href="&">Olvido su contraseña?</a><br>
-        <a href="crearCuenta.html">No tienes cuenta?</a>
-    </form> 
-</div>
+                <input type="submit" value="Iniciar sesión">       
 
-</body>
-
+                <a href="#">¿Olvido su contraseña?</a><br>
+                <a href="crearCuenta.html">¿No tienes cuenta?</a>
+            </form> 
+        </div>
+    </body>
 </html>
