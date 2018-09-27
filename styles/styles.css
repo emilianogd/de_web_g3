@@ -22,7 +22,7 @@ body{
     text-decoration: none;
     display: inline-block;
 }
-.menu{
+.menu {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
@@ -44,6 +44,7 @@ body{
 .navegador ul li {
     display: inline-block;
     justify-content: flex-end;
+    font-weight: bold;
 
 }
 .navegador ul li a:hover {
@@ -57,7 +58,6 @@ body{
 }
 /*BUSCADOR*/
 .Buscador form {
-    padding: 5%;
     width: 300px;
     margin: 0 auto;
 }
@@ -67,14 +67,14 @@ body{
     background: white;
     border: 1px solid #333;
     border-radius: 5px;
-    padding: 0 0 0 40px; 
+    padding: 0 0 0 30px; 
 }
 .Buscador input, button {
     position: relative;
     float: left;
     width: 200px;
-    height: 40px;
-    padding: 0px;
+    height: 30px;
+    padding: 0;
 }
 
 .Buscador input {
@@ -84,16 +84,17 @@ body{
 }
 
 .Buscador button {
-    font-size: 1.4em;
-    width: 40px;
+    font-size: 1.2em;
+    width: 30px;
     border:none;
     background: #333;
     transform: translate(-50px,0);
+    transition-duration: .3s;
 }
 
 .fa-search {
     color:#bbb;
-    transform: translate(-190px,0);
+    transform: translate(-180px,0);
     transition: all .1s ease-in-out;
 
 }
@@ -108,11 +109,12 @@ body{
 
 }
 
-.Buscador input:focus + button .fa {
-    color:white;
+.Buscador input:focus + button .fas {
+    color:#474747;
     transform: translate(0,0);
     transition-duration: .4s;
 }
+
 
 .main{
     padding-top: 10rem; 
@@ -124,6 +126,7 @@ body{
    }
     .navegador ul li {
         display: block;
+        font-size: 2em;
     
     }
     .navegador ul li a:hover {
