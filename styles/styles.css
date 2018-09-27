@@ -141,7 +141,7 @@ body{
 }
 
 /*ASIDE*/
-aside {
+.sidebar {
     border-radius: 10px; 
     box-shadow: #454647 1px 1px 0px 0px inset ;
     vertical-align: top;
@@ -152,19 +152,25 @@ aside {
     margin-left: 20px;
     margin-top: 10px; 
     padding: 10px;
+    height: 100%;
 }
 
-li a{
-    text-decoration: none;
-    color: black
-}
-  
 .papas{
     text-decoration: none;
 }
 
 .titulos{
     color: aliceblue;
+}
+
+.sidebar ul li{
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+
+.sidebar li a {
+    text-decoration: none;
 }
 
 /*LISTA DE JUEGOS*/
