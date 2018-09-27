@@ -56,20 +56,20 @@ body{
     border-radius: 2rem;
 }
 /*BUSCADOR*/
-form {
+.Buscador form {
     padding: 5%;
     width: 300px;
     margin: 0 auto;
 }
 
-fieldset {
+.Buscador fieldset {
     display: inline-block;
     background: white;
     border: 1px solid #333;
     border-radius: 5px;
     padding: 0 0 0 40px; 
 }
-input, button {
+.Buscador input, button {
     position: relative;
     float: left;
     width: 200px;
@@ -77,13 +77,13 @@ input, button {
     padding: 0px;
 }
 
-input {
+.Buscador input {
     color:gray;
     border:none;
     z-index: 2;
 }
 
-button {
+.Buscador button {
     font-size: 1.4em;
     width: 40px;
     border:none;
@@ -98,17 +98,17 @@ button {
 
 }
 
-input:focus {
+.Buscador input:focus {
     outline: none;
 }
 
-input:focus + button {
+.Buscador input:focus + button {
     transform: translate(0,0);
     transition-duration: .3s;
 
 }
 
-input:focus + button .fa {
+.Buscador input:focus + button .fa {
     color:white;
     transform: translate(0,0);
     transition-duration: .4s;
