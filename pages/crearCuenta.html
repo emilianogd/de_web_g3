@@ -8,42 +8,30 @@
     <link rel="stylesheet" href="../styles/styles.css"> 
     <link rel="shortcut icon" href="../images/g3.ico">
 </head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background: url(../images/fondo.jpg) no-repeat center top;
+        background-size: cover;
+        font-family: sans-serif;
+        height: 100vh;
+    }
+</style>
 <body>
-    <header class="header">
-        <div class="menu logo-nav">
-                <a class="logo" href="../index.html"><img src="../images/g3.png" width="100" height="100"></a>   
-        <nav class="navegador">
-            <ul>
-                <li><a href="../pages/comunidad.html">COMUNIDAD</a></li>
-                <li><a href="../pages/juegos.html">JUEGOS</a></li>
-                <li><a href="../pages/noticias.html">NOTICIAS</a></li>
-                <li><a href="../pages/foro.html">CONTÁCTENOS</a></li>
-                <li><section class="Buscador">
-                    <form>
-                        <fieldset>    
-                            <input type="buscar" required placeholder="Buscar...">		    	
-                            <button type="submit"> <i class="fas fa-search"> </i> </button>
-                        </fieldset>		
-                    </form>
-                </section></li>   
-                <li><a href="../pages/iniciarSesión.html">&#128100</a></li>
-            </ul>
-        </nav></div>
-    </header>
-
-    <nav>
-        <form class="main">  
-            <br>
-            <h1>Crear una cuenta</h1>
-            <table>
-                <label for="Nombre">Nombre:</label><br>
-                <input type="text" id="Nombre" maxlength="30" required name="Nombre">
-                <br>
-                <label for="Apellido">Apellido:</label><br>
-                <input type="text" id="Apellido" maxlength="30" required name="Apellido">
-                <br>
-                <label for="Pais_residencia">Selecciona país:</label><br>
-                <select name="pais" required>
+    <div class="crearcuenta-box">
+        <form>  
+                <!-- <a href="../index.html"><img class="avatar" src="../images/g3.png" alt="G3 LOGO"></a>-->
+                <h1>Crear una cuenta</h1>
+                <!--NOMBRE-->
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" id="Nombre" maxlength="30" required name="Nombre">
+                <!--APELLIDO-->
+                    <label for="Apellido">Apellido</label>
+                    <input type="text" id="Apellido" maxlength="30" required name="Apellido">
+                <!--PAIS-->
+                    <label for="Pais_residencia">Selecciona país</label>
+                    <select name="pais" required>
                     <option value="AF">Afganistán</option>
                     <option value="AL">Albania</option>
                     <option value="DE">Alemania</option>
@@ -278,68 +266,24 @@
                     <option value="YU">Yugoslavia</option>
                     <option value="ZM">Zambia</option>
                     <option value="ZW">Zimbabue</option>
-                    </select>
-                <br>
-                <label for="email">Direccíon de correo:</label><br>
-                <input type="email" id="email" maxtlength="25" required name="Email">
-                <br>
-                <label for="Contraseña">Contraseña:</label><br>
-                <input type="password" id="Contraseña" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" maxlength="24" required name="password"><br>*La contraseña tiene que tener un minimo de 8 a 24<br> caracteres con al menos 1 minuscula, mayuscula y numero*<br>
-                <label for="RepetirContraseña">Repetir Contraseña:</label><br>
+                    </select><br><br>
+                <!--EMAIL-->
+                    <label for="email">Direccíon de correo</label>
+                    <input type="email" id="email" maxtlength="25" required name="Email">
+                <!--CONTRASEÑA-->
+                    <label for="Contraseña">Contraseña</label>
+                    <input type="password" id="Contraseña" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" maxlength="24" required name="password"><!--<br>*La contraseña tiene que tener un minimo de 8 a 24<br> caracteres con al menos 1 minuscula, mayuscula y numero*<br>-->
+                <!--REP-CONTRASEÑA-->    
+                    <label for="RepetirContraseña">Repetir Contraseña</label>
                 <!--la contraseña ingresada tenga un mínimo de 8 ({8,}) caracteres e incluya al menos un dígito (?=.*\d)) , una letra minúscula (?=.*[a-z]) y una mayúscula (?=.*[A-Z]).-->
-                <input type="password" id="RepetirContraseña" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" maxlength="24" required name="password"><br>
-                <br>
-                <label for="Nombre_del_foro">Nombre del foro:</label><br>
-                <input type="text" id="Nombre_del_foro" maxlength="10" required name="Nombre_del_foro">
-                <br><br>    
-                <label><input type="checkbox" id="cbox1" value="checkbox">Acepto <a href="Terminosycondiciones.html">Terminos y condiciones</a> </label><br>
-                <input type="submit" value="Crear cuenta"> <br><br> 
-            </table>
-
+                    <input type="password" id="RepetirContraseña" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" maxlength="24" required name="password">
+                <!--NOMBRE-FORO-->
+                    <label for="Nombre_del_foro">Nombre del foro</label>
+                    <input type="text" id="Nombre_del_foro" maxlength="10" required name="Nombre_del_foro">
+                <!--TERMINOS Y CONDICIONES-->
+                    <label><input type="checkbox" id="cbox1" value="checkbox">Acepto <a href="Terminosycondiciones.html">Terminos y condiciones</a> </label>
+                    <input type="submit" value="Crear cuenta">
         </form>
-    </nav>
-
-    <footer> 
-        <div class="contenedor-total">
-            <div class="contenedor">
-                <!--COLUMNA 1 DEL FOOTER-->
-                <div class="columna1">
-                    <h1>Redes Sociales</h1>
-                    <div class="fila">
-                        <a href="http://www.facebook.com"><img src="../images/logo_facebook.png"></a>
-                        <p>Síguenos en Facebook</p>
-                    </div>
-                    <div class="fila">
-                        <a href="http://www.twitter.com"><img src="../images/logo_twitter.png"></a>
-                        <p>Síguenos en Twitter</p>
-                    </div>
-                    <div class="fila">
-                        <a href="http://www.instagram.com"><img src="../images/logo_Instagram.png"></a>
-                        <p>Síguenos en Instagram</p>
-                    </div>
-                </div>
-                <!--COLUMNA 2 DEL FOOTER-->
-                <div class="columna2">
-                    <h1>Ubicación</h1>
-                    <div class="fila2">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.0901420808586!2d-56.17132727044581!3d-34.910450505381526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81a524c430f3%3A0x8bc559be2b555673!2sCabo+Polonio%2C+11200+Montevideo!5e0!3m2!1ses-419!2suy!4v1533527683911" width="275" height="175" style="border:0" allowfullscreen></iframe> 
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="contenedor2">
-            <div class="footer">
-                <div class="DR">
-                    © 2018 Todos los derechos reservados 
-                </div>
-                <div class="politicas">
-                     | <a href="TerminosyCondiciones.html">Política de Privacidad</a>
-                     | <a href="">Información legal</a>
-                     | <a href="">Acuerdo de Suscriptor a Click </a>
-                     | <a href="">Reembolsos </a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    </div>
 </body>
 </html>

@@ -310,7 +310,7 @@ footer {
 .login-box {
     width: 320px;
     height: 420px;
-    background:black;
+    background:rgba(0,0,0,0.6);;
     color: #fff;
     top: 50%;
     left: 50%;
@@ -388,6 +388,81 @@ footer {
     padding-top: 10rem;
 }
 
+/*CREAR-CUENTA*/
+
+.crearcuenta-box {
+    width: 700px;
+    height: 635px;
+    background:rgba(0,0,0,0.6);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    box-sizing: border-box;
+    padding: 30px 30px;
+}
+
+/*.crearcuenta-box.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+*/
+.crearcuenta-box h1{
+    margin: 0;
+    padding: 0 0 10px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.crearcuenta-boxlabel{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.crearcuenta-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.crearcuenta-box input[type="text"],
+.crearcuenta-box input[type="email"],
+.crearcuenta-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    height: 30px;
+    color: white;
+    font-size: 16px;
+}
+
+.crearcuenta-box input[type="submit"]{
+    border:none;
+    outline:none;
+    height: 30px;
+    background: #060061;
+    color:white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.crearcuenta-box a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color:darkgray;
+}
+
+.crearcuenta-box a:hover{
+    color:white;
+}
+
+
 /*Comunidad*/
 
 .comunidad-externo {
@@ -438,20 +513,55 @@ footer {
     float: left;
     width: 300px;
     height: 25px;
+    border: 2px solid rgb(87, 87, 87);
+    border-radius:4px;
+    margin: 2px 0;
+    outline: none;
+    padding: 8px;
+    
+}
+#nombre-contacto:focus, #email-contacto:focus{
+    border-color: #060061;
+    box-shadow: 0 0 8px 0 #060061;
 }
 #apellido-contacto, #celular-contacto{
     margin-bottom: 20px;
     float: right;
     width: 300px;
     height: 25px;
+    border: 2px solid rgb(87, 87, 87);
+    border-radius:4px;
+    margin: 2px 0;
+    outline: none;
+    padding: 8px;
+}
+#apellido-contacto:focus, #celular-contacto:focus{
+    border-color: #060061;
+    box-shadow: 0 0 8px 0 #060061;
 }
 .foro textarea {
+    margin-top: 10px;
     width: 100%;
+    border: 2px solid rgb(87, 87, 87);
+    border-radius:4px;
+    margin: 2px 0;
+    outline: none;
+    padding: 8px;
+}
+.foro textarea:focus{
+    border-color: #060061;
+    box-shadow: 0 0 8px 0 #060061;
 }
 .enviar-formulario {
     margin: auto;
     display: block;
+    border:none;
+    outline:none;
+    height: 40px;
+    background: #060061;
+    color:white;
     font-size: 15px;
+    border-radius: 20px;
 }
 
 /*COMUNIDAD Y NOTICIAS*/
