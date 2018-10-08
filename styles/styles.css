@@ -451,6 +451,7 @@ footer {
     font-size: 18px;
     border-radius: 20px;
 }
+
 .crearcuenta-box a{
     text-decoration: none;
     font-size: 12px;
@@ -458,10 +459,9 @@ footer {
     color:darkgray;
 }
 
-.crearcuenta-box a:hover{
-    color:white;
+#cbox1{
+    margin-left: -300px;
 }
-
 
 /*Comunidad*/
 
