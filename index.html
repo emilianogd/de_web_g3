@@ -2,14 +2,15 @@
 <html lang="Es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0 maximum-scale=1.0 minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>G3</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="shortcut icon" href="images/g3.ico">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/font-awesome.css">
+    <link rel="shortcut icon" href="./images/g3.ico">
     <!--CAMBIAR LETRA DE LA PAGINA-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <script src="scripts/main.js"></script>
+    <script src="script/jquery-3.1.0.min.js"></script>
+    <script src="script/main.js"></script>
 </head>
 
 <body>
@@ -39,32 +40,55 @@
     <div class="mains">
         <div class="sidebar">
             <div class="titulos">Categorías</div>
-                <ul>  
-                    <li><a href="#">Mas vendidos</a></li>  
-                    <li><a href="#">Novedades</a></li>
-                    <li><a href="#">De la casa</a></li>
-                </ul>     
+            <ul>  
+                <li><a href="#">Mas vendidos</a></li>  
+                <li><a href="#">Novedades</a></li>
+                <li><a href="#">De la casa</a></li>
+            </ul>     
             <div class="titulos">Géneros</div>
-                <ul>
-                    <li><a href="#">Acción</a></li>
-                    <li><a href="#">Pelea</a></li>
-                    <li><a href="#">Free to play</a></li>
-                    <li><a href="#">Aventura</a></li>
-                </ul>
+            <ul>
+                <li><a href="#">Acción</a></li>
+                <li><a href="#">Pelea</a></li>
+                <li><a href="#">Free to play</a></li>
+                <li><a href="#">Aventura</a></li>
+            </ul>
         </div>
-
         <div class="destacado">
             <div class="menu">   
                 <h3>Destacados:</h3>
-                <a href="pages/megaman.html"><img src="images/Juegos/Megaman/megamanprincipal.jpg" width="504" height="250" alt="Juego aleatorio" height="100%"></a>
-                <a href="pages/gtaV.html"><img src="images/Juegos/GTAV/GTAVTITULO.jpg" width="250" height="250" alt="Juego aleatorio" height="100%"></a>
-                <br>
-                <a href="pages/codMW3.html"><img src="images/Juegos/CoD/CoDTITULO.png" width="250" height="250" alt="Juego aleatorio" height="100%"></a>
-                <a href="pages/skyrim.html"><img src="images/Juegos/Skyrim/skyrimTITULO.jpg" width="250" height="250" alt="Juego aleatorio" height="100%"></a>
-                <a href="pages/batllefieldV.html"><img src="images/Juegos/BATTLEFIELDV/BATTLEFIELDVTITULO.png" width="250" height="250" alt="Juego aleatorio" height="100%"></a>
+                <div class="slideshow"><!--width="600" height="400"-->
+                    <ul class="slider" class="listas-slider">
+                        <li class="listas-slider">
+                            <a href="pages/gtaV.html"><img src="images/Juegos/GTAV/GTAV_1.jpg" alt="GTAV" height="100%"></a>        
+                        </li>
+                        <li class="listas-slider">
+                            <a href="pages/codMW3.html"><img src="images/Juegos/CoD/CoD_MW3.png" alt="codMW3" height="100%"></a>
+                        </li>
+                        <li class="listas-slider">
+                            <a href="pages/skyrim.html"><img src="images/Juegos/Skyrim/skyrim1.jpg" alt="Skyrim" height="100%"></a>
+                        </li>
+                        <li class="listas-slider">
+                            <a href="pages/batllefieldV.html"><img src="images/Juegos/BATTLEFIELDV/battle1.jpg" alt="BatllefieldV" height="100%"></a>
+                        </li>
+                        <li class="listas-slider">
+                            <a href="pages/megaman.html"><img src="images/Juegos/Megaman/1366_2000.jpg" alt="Megaman" height="100%"></a>
+                        </li>
+                    </ul>
+            
+                    <ol class="pagination"></ol>
+            
+                    <div class="left">
+                        <span class="fa fa-chevron-left"></span>
+                    </div>
+            
+                    <div class="right">
+                        <span class="fa fa-chevron-right"></span>
+                    </div>
+                </div>
+    
             </div><br>
         </div>
-
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <table class="ofertas">
             <tr><th><h3><div>Ofertas de la semana:</div></h3></th></tr>
             <tr><th><a href="pages/juego1.html"><img src="http://via.placeholder.com/250x350" alt="Juego aleatorio" height="100%"></a></th>

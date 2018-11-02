@@ -13,10 +13,8 @@ body{
 .header{
     background: #333;
     color:white;
+    position: absolute;
     padding: 1rem 0;
-    position: fixed;
-    left: 0;
-    top: 0;
     width: 100%;
 }
 
@@ -49,7 +47,6 @@ body{
     display: inline-block;
     justify-content: flex-end;
     font-weight: bold;
-
 }
 
 .navegador ul li a:hover {
@@ -128,7 +125,6 @@ body{
     }
     .navegador ul li {
         display: block;
-        font-size: 2em;
     }
     .navegador ul li a:hover {
         background:rgb(59, 59, 59);
@@ -191,7 +187,9 @@ center{
 
 /*OFERTAS*/
 
+
 .ofertas{
+    position: unset;
     padding: 5px;
     margin-left: 250px;
     flex-grow: center;
@@ -617,3 +615,72 @@ footer {
 .segundo-juego, .tercer-juego, .quinto-juego, .sexto-juego, .octavo-juego, .noveno-juego, .undecimo-juego, .doceavo-juego{
     margin-left: 100px;
 }  
+
+/* SLIDER */
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul, ol{
+    list-style: none;
+}
+body{
+    font-family: Open 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+.slideshow{
+    width: 70%;
+    position: absolute;
+}
+.slider li,ul{
+    width: 100%; 
+}
+.slider li img{
+    width: 100%;
+}
+.pagination{
+    position: absolute;
+    top: 102%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.pagination li{
+    font-size: 20px;
+    margin: 2px 5px;
+    color: #858585;
+    cursor: pointer;
+}
+.slider .caption{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+.left, .right{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 2;
+}
+.left{
+    left: 10px;
+}
+.right{
+    right: 10px;
+}
