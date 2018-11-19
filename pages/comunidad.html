@@ -5,127 +5,219 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>G3 - Comunidad</title>
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="shortcut icon" href="../images/g3.ico">
+    <link rel="stylesheet" type="text/css" href="../style/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../style/styles.css">    
+    <script type="text/javascript" src="../script/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="../script/bootstrap.min.js"></script>
+        
 </head>
-
 <body>
-    <header class="header">
-        <div class="menu logo-nav">
-                <a class="logo" href="../index.html"><img src="../images/g3.png" width="100" height="100"></a>   
-        <nav class="navegador">
-            <ul>
-                <li><a href="../pages/comunidad.html">COMUNIDAD</a></li>
-                <li><a href="../pages/juegos.html">JUEGOS</a></li>
-                <li><a href="../pages/noticias.html">NOTICIAS</a></li>
-                <li><a href="../pages/contáctenos.html">CONTÁCTENOS</a></li>
-                <li><section class="Buscador">
-                    <form>
-                        <fieldset>    
-                            <input type="buscar" required placeholder="Buscar...">		    	
-                            <button type="submit"> <i class="fas fa-search"> </i> </button>
-                        </fieldset>		
-                    </form>
-                </section></li>   
-                <li><a href="../pages/iniciarSesión.html">&#128100</a></li>
-            </ul>
-        </nav></div>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <div class="navbar-header ">
+                    <a href="../index.html"><img src="../images/g3.png"></a>
+                    <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar-1">
+                        <span class="sr-only ">Menu</span>
+                        <span class="">MENÚ</span>
+                    </button>         
+                </div>
+                <div class="collapse navbar-collapse justify-content-center" id="navbar-1">
+                    <ul class="nav navbar-nav ">
+                        <li class="nav-item"><a class="nav-link btn-outline-light" href="../pages/comunidad.html">COMUNIDAD</a></li>
+                        <li class="nav-item"><a class="nav-link btn-outline-light" href="../pages/juegos.html">JUEGOS</a></li>
+                        <li class="nav-item"><a class="nav-link btn-outline-light" href="../pages/noticias.html">NOTICIAS</a></li>
+                        <li class="nav-item"><a class="nav-link btn-outline-light" href="../pages/contáctenos.html">CONTÁCTENOS</a></li>
+                        <li>
+                            <form action="" class="navbar-form" role="search"> 
+                                <div class="form-group">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." >
+                                </div>
+                            </form>
+                        </li>
+                        <li class="nav-item"><a class="nav-link btn-outline-light" href="../pages/iniciarSesión.html">&#128100</a></li>
+                        <li class="nav-item"><a class="nav-link btn-outline-light" href="../pages/comprar.html">&#128180</a></li>
+                    </ul>
+                </div>        
+            </div>
+        </nav>
     </header>
 
-        <div class="mains">
-            <div class="comentario-comunidad"><h2>Comentarios:</h2><br>
-                <div class="comentario-interno">
-                    <table class="comentario-autor">
-                        <tr><th><img src="http://via.placeholder.com/75x75" alt="Nombre Apellido" height="100%"></th><th>
-                            <table>
-                                <tr><th><span>Nombre Apellido</span> <span>dice</span></th>
-                                <tr><th><p>01 Octubre, 2018 at 15:44</p></th></tr>    
-                            </table></th>
-                        </tr>
-                    </table>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                </div>
-                <br>
-                <div class="comentario-interno2">
-                    <table class="comentario-autor2">
-                        <tr><th><img src="http://via.placeholder.com/75x75" alt="Nombre Apellido" height="100%"></th><th>
-                            <table>
-                                <tr><th><span>Nombre Apellido</span> <span>dice</span></th>
-                                <tr><th><p>02 Octubre, 2018 at 16:45</p></th></tr>    
-                            </table></th>
-                        </tr>
-                    </table>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                </div>
-                <br>
-                <div class="comentario-interno3">
-                    <table class="comentario-autor3">
-                        <tr><th><img src="http://via.placeholder.com/75x75" alt="Nombre Apellido" height="100%"></th><th>
-                            <table>
-                                <tr><th><span>Nombre Apellido</span> <span>dice</span></th>
-                                <tr><th><p>03 Octubre, 2018 at 17:46</p></th></tr>    
-                            </table></th>
-                        </tr>
-                    </table>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                </div>
-        
-                <div class="comunidad-externo">
-                    <h1>Deje aquí su comentario</h1>
-                    <div class="comunidad"><br>
-                        <form action="" method="post">
-                            <input type="text" id="nombre-comunidad" placeholder="Nombre del usuario" maxlength="30" required name="nombre_de_usuario">
-                            <input type="email" id="email-comunidad" placeholder="E-mail" maxlength="30" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" name="E-mail">
+    <br><br><br><br><br><br>
+    
+    <div class="container">
+        <section>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div> 
+                    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">    
+                        <div class="comentario-comunidad"><h2>Comentarios:</h2><br>
+                            <div class="comentario-interno">
+                                <div class="col-12">
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+                                        <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+                                            <img class="img-fluid" src="../images/persona.png" alt="fotoUsuario">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-7 col-md-8 col-lg-8">
+                                            <br>
+                                            <h5>Nombre Apellido</h5>
+                                            <p>01 Octubre, 2018 at 15:44</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+                                                <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                                                    <br>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+                                            </div>
+                                        </div>                                          
+                                    </div>
+                                </div>
+                            </div>
                             <br>
-                            <textarea id="Mensaje" placeholder="Mensaje...*" rows="10" cols="60"></textarea><br>
-                            <input class="enviar-formulario" type="submit" value="Enviar">    
-                        </form><br>
-                    </div>  
+                            <div class="comentario-interno">
+                                <div class="col-12">
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+                                        <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+                                            <img class="img-fluid" src="../images/persona.png" alt="fotoUsuario">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-7 col-md-8 col-lg-8">
+                                            <br>
+                                            <h5>Nombre Apellido</h5>
+                                            <p>01 Octubre, 2018 at 15:44</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+                                                <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                                                    <br>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+                                            </div>
+                                        </div>                                          
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="comentario-interno">
+                                <div class="col-12">
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+                                        <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+                                            <img class="img-fluid" src="../images/persona.png" alt="fotoUsuario">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-7 col-md-8 col-lg-8">
+                                            <br>
+                                            <h5>Nombre Apellido</h5>
+                                            <p>01 Octubre, 2018 at 15:44</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+                                                <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                                                    <br>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+                                            </div>
+                                        </div>                                          
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="comentario-interno">
+                                <div class="col-12">
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+                                        <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+                                            <img class="img-fluid" src="../images/persona.png" alt="fotoUsuario">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-7 col-md-8 col-lg-8">
+                                            <br>
+                                            <h5>Nombre Apellido</h5>
+                                            <p>01 Octubre, 2018 at 15:44</p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+                                                    <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                                                        <br>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+                                                </div>
+                                            </div>                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div> 
                 </div>
-            </div><br>
-        </div>
-    <footer> 
-            <div class="contenedor-total">
-                <div class="contenedor">
-            <!--COLUMNA 1 DEL FOOTER-->
+            </div>
+        </section>
+    </div>
+
+    <br>
+
+    <footer class="container-fluid">
+        <div class="col-12">
+            <div class="row contenedor-total">
+                <div class="col-xs-12 col-sm-5 col-md-4">
                     <div class="columna1">
-                        <h1>Redes Sociales</h1>
-                        <div class="fila">
-                            <a href="http://www.facebook.com"><img src="../images/logo_facebook.png"></a>
-                            <p>Síguenos en Facebook</p>
-                        </div>
-                        <div class="fila">
-                            <a href="http://www.twitter.com"><img src="../images/logo_twitter.png"></a>
-                            <p>Síguenos en Twitter</p>
-                        </div>
-                        <div class="fila">
-                            <a href="http://www.instagram.com"><img src="../images/logo_Instagram.png"></a>
-                            <p>Síguenos en Instagram</p>
-                        </div>
+                        <br>
+                        <h3 class="">Redes Sociales</h3>
+                        <br>
+                        <div class="fila"><a href="http://www.facebook.com"><img src="../images/logo_facebook.png"> Síguenos en Facebook</a></div>
+                        <br>
+                        <div class="fila"><a href="http://www.twitter.com"><img src="../images/logo_twitter.png"> Síguenos en Twitter</a></div>
+                        <br>
+                        <div class="fila"><a href="http://www.instagram.com"><img src="../images/logo_Instagram.png"> Síguenos en Instagram</a></div>
                     </div>
-                    <!--COLUMNA 2 DEL FOOTER-->
+                </div>
+                <div class="col-xs-12 col-sm-1 col-md-3">         </div>
+                <div class="col-xs-12 col-sm-6 col-md-5">       
                     <div class="columna2">
-                        <h1>Ubicación</h1>
+                        <br>
+                        <h3>Ubicación</h3>
+                        <br>
                         <div class="fila2">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.0901420808586!2d-56.17132727044581!3d-34.910450505381526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81a524c430f3%3A0x8bc559be2b555673!2sCabo+Polonio%2C+11200+Montevideo!5e0!3m2!1ses-419!2suy!4v1533527683911" width="275" height="175" style="border:0" allowfullscreen></iframe> 
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.0901420808586!2d-56.17132727044581!3d-34.910450505381526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81a524c430f3%3A0x8bc559be2b555673!2sCabo+Polonio%2C+11200+Montevideo!5e0!3m2!1ses-419!2suy!4v1533527683911"></iframe> 
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="contenedor2">
-                <div class="footer">
-                    <div class="DR">
-                        © 2018 Todos los derechos reservados 
-                    </div>
-                    <div class="politicas">
-                         | <a href="TerminosyCondiciones.html">Política de Privacidad</a>
-                         | <a href="">Información legal</a>
-                         | <a href="">Acuerdo de Suscriptor a Click </a>
-                         | <a href="">Reembolsos </a>
-                    </div>
+        </div>
+        <br>
+        <div class="col-12">
+            <div class="row contenedor-total">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <p> © 2018 Todos los derechos reservados </p>
+                </div>
+                <div class="col-xs-0 col-sm-1 col-md-3"></div>
+                <div class="col-xs-12 col-sm-8 col-md-6">
+                    | <a href="pages/TerminosyCondiciones.html">Política de Privacidad</a>
+                    | <a href="">Información legal</a>
+                    | <a href="">Acuerdo de Suscriptor a G3 </a>
+                    | <a href="">Reembolsos </a>
                 </div>
             </div>
-        </footer>
- 
+        </div>
+    </footer>
+        
 </body>
 </html>

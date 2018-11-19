@@ -5,137 +5,199 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>G3 - MegaMan</title>
-    <link rel="shortcut icon" href="../images/g3.ico">
-    <link rel="stylesheet" href="../styles/styles.css">    
+    <link rel="stylesheet" type="text/css" href="../style/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../style/styles.css">    
+    <script type="text/javascript" src="../script/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="../script/bootstrap.min.js"></script>
+    
 </head>
 <body>
-    <header class="header">
-        <div class="menu logo-nav">
-                <a class="logo" href="../index.html"><img src="../images/g3.png" width="100" height="100"></a>   
-        <nav class="navegador">
-            <ul>
-                <li><a href="../pages/comunidad.html">COMUNIDAD</a></li>
-                <li><a href="../pages/juegos.html">JUEGOS</a></li>
-                <li><a href="../pages/noticias.html">NOTICIAS</a></li>
-                <li><a href="../pages/contáctenos.html">CONTÁCTENOS</a></li>
-                <li><section class="Buscador">
-                    <form>
-                        <fieldset>    
-                            <input type="buscar" required placeholder="Buscar...">		    	
-                            <button type="submit"> <i class="fas fa-search"> </i> </button>
-                        </fieldset>		
-                    </form>
-                </section></li>   
-                <li><a href="../pages/iniciarSesión.html">&#128100</a></li>
-            </ul>
-        </nav></div>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <div class="navbar-header ">
+                    <a href="../index.html"><img src="../images/g3.png"></a>
+                    <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar-1">
+                        <span class="sr-only ">Menu</span>
+                        <span class="">MENÚ</span>
+                    </button>         
+                </div>
+                <div class="collapse navbar-collapse justify-content-center" id="navbar-1">
+                    <ul class="nav navbar-nav ">
+                        <li class="nav-item"><a class="nav-link btn-outline-light" href="../pages/comunidad.html">COMUNIDAD</a></li>
+                        <li class="nav-item"><a class="nav-link btn-outline-light" href="../pages/juegos.html">JUEGOS</a></li>
+                        <li class="nav-item"><a class="nav-link btn-outline-light" href="../pages/noticias.html">NOTICIAS</a></li>
+                        <li class="nav-item"><a class="nav-link btn-outline-light" href="../pages/contáctenos.html">CONTÁCTENOS</a></li>
+                        <li>
+                            <form action="" class="navbar-form" role="search"> 
+                                <div class="form-group">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." >
+                                </div>
+                            </form>
+                        </li>
+                        <li class="nav-item"><a class="nav-link btn-outline-light" href="../pages/iniciarSesión.html">&#128100</a></li>
+                    </ul>
+                </div>        
+            </div>
+        </nav>
     </header>
 
-    
-    <div class="main"><br><h2>MegaMan</h2><br></div>
-    <table id="Portada">
-            <tr><th><a href="#"><img src="../images/Juegos/Megaman/megamanprincipal.jpg" width="517" height="250" alt="Mega Man" height="100%"></a></th></tr>
-        </table>
+    <br><br><br><br><br><br>
+
+    <div class="container">
+        <div class="col-12 fondoTotal">
+                <br>
+            <div class="row">
+                <div class="text-justify col-xs-12 col-sm-3 col-md-3 col-lg-3"></div>
+                <div class="fondoini text-justify col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <h3 class="text-center">MEGAMAN</h3>
+                </div>
+                <div class="text-justify col-xs-12 col-sm-3 col-md-3 col-lg-3"></div>
+            </div>
+            <div><br>
+                <h3 class="fondoJuegos text-center">GALERÍA:</h3>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2"></div>
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                    <div id="carousel-1" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-1" data-slide-to="1"></li>
+                            <li data-target="#carousel-1" data-slide-to="2"></li>
+                            <li data-target="#carousel-1" data-slide-to="3"></li>
+                            <li data-target="#carousel-1" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 h-400" src="../images/Juegos/Megaman/1366_2000.jpg" alt="Megaman">       
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 h-400" src="../images/Juegos/Megaman/1366_2000 (2).jpg" alt="Megaman">  
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 h-400" src="../images/Juegos/Megaman/1366_2000 (3).jpg" alt="Megaman">        
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 h-400" src="../images/Juegos/Megaman/1366_2000 (1).jpg" alt="Megaman">  
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 h-400" src="../images/Juegos/Megaman/megamanprincipal.jpg" alt="Megaman">       
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Atras</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Siguiente</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2"></div>
+            </div>
+            <div><br>
+                <h3 class="fondoJuegos text-center">CATEGORÍA:</h3>
+            </div>
+            <h4 class="text-center">SIMULACIÓN</h4>                
+            <div><br>
+                <h3 class="fondoJuegos text-center">DESCRIPCIÓN:</h3>
+            </div>
+            <p class="text-center">Mega Man (conocido en Japón como Rockman (ロックマン Rokkuman?)) es el personaje principal 
+                del videojuego Mega Man. Es un robot creado en el año 20XX por el Doctor Thomas Light 
+                dentro del universo de la saga de videojuegos homónima creada por Capcom en 1987 para 
+                la consola Nintendo Entertainment System.</p>
+            <div><br>
+                <h3 class="fondoJuegos text-center">VALORACIÓN:</h3>
+            </div>
+            <div class="text-center valoracion">
+                <input id="radio1" type="radio" name="estrellas" value="5">
+                <label for="radio1">1</label>
+                   
+                <input id="radio2" type="radio" name="estrellas" value="4">
+                <label for="radio2">2</label>
+             
+                <input id="radio3" type="radio" name="estrellas" value="3">
+                <label for="radio3">3</label>
+                
+                <input id="radio4" type="radio" name="estrellas" value="2">
+                <label for="radio4">4</label>
+                
+                <input id="radio5" type="radio" name="estrellas" value="1">
+                <label for="radio5">5</label>
+                
+                <input id="radio6" type="radio" name="estrellas" value="1">
+                <label for="radio6">6</label>
+                
+                <input id="radio7" type="radio" name="estrellas" value="1">
+                <label for="radio7">7</label>
+                    
+                <input id="radio8" type="radio" name="estrellas" value="1">
+                <label for="radio8">8</label>
+                    
+                <input id="radio9" type="radio" name="estrellas" value="1">
+                <label for="radio9">9</label>
+                    
+                <input id="radio10" type="radio" name="estrellas" value="1">
+                <label for="radio10">10</label>
+            </div>
+        <div><br>
+            <h3 class="fondoJuegos text-center">PRECIO:</h3>
+        </div>
+        <h4 class="text-center">$ 550</h4>
+            <div class="text-center">
+                <a class="btn btn-light " href="../pages/comprar.html">Comprar</a>
+            </div>
+            <br>
+        </div>
+    </div>
+    <br>
         
-        <dl style="Display: table-caption">
-            <dt><h3>Categoría:</h3></dt>
-                <dd>Simulador</dd>
-            
-            <dt><h3>Descripción:</h3></dt>
-                <dd>Mega Man (conocido en Japón como Rockman (ロックマン Rokkuman?)) es el personaje principal 
-                    del videojuego Mega Man. Es un robot creado en el año 20XX por el Doctor Thomas Light 
-                    dentro del universo de la saga de videojuegos homónima creada por Capcom en 1987 para 
-                    la consola Nintendo Entertainment System.</dd>
-            
-            <dt><h3>Galería</h3></dt>
-                <dd><table id="Galeria">
-                    <tr><th></th></tr>
-                    <tr><th><a href=""><img src="../images/Juegos/Megaman/1366_2000 (1).jpg" width="100" height="100" alt="random1" height="100%"></a></th>
-                        <th><a href=""><img src="../images/Juegos/Megaman/1366_2000 (2).jpg" width="100" height="100" alt="random2" height="100%"></th>
-                        <th><a href=""><img src="../images/Juegos/Megaman/1366_2000 (3).jpg" width="100" height="100" alt="random3" height="100%"></a></th>
-                        <th><a href=""><img src="../images/Juegos/Megaman/1366_2000 (4).jpg" width="100" height="100" alt="random4" height="100%"></a></th>
-                        <th><a href=""><img src="../images/Juegos/Megaman/1366_2000.jpg" width="100" height="100" alt="random5" height="100%"></a></th></tr>
-                </table></dd>
-            <dt><h3>Valoración:</h3></dt>
-                <dd><div class="valoracion">
-                    <input id="radio1" type="radio" name="estrellas" value="5">
-                    <label for="radio1">1</label>
-                    
-                    <input id="radio2" type="radio" name="estrellas" value="4">
-                    <label for="radio2">2</label>
-                    
-                    <input id="radio3" type="radio" name="estrellas" value="3">
-                    <label for="radio3">3</label>
-                    
-                    <input id="radio4" type="radio" name="estrellas" value="2">
-                    <label for="radio4">4</label>
-                    
-                    <input id="radio5" type="radio" name="estrellas" value="1">
-                    <label for="radio5">5</label>
-                    
-                    <input id="radio6" type="radio" name="estrellas" value="1">
-                    <label for="radio6">6</label>
-                    
-                    <input id="radio7" type="radio" name="estrellas" value="1">
-                    <label for="radio7">7</label>
-                    
-                    <input id="radio8" type="radio" name="estrellas" value="1">
-                    <label for="radio8">8</label>
-                    
-                    <input id="radio9" type="radio" name="estrellas" value="1">
-                    <label for="radio9">9</label>
-                    
-                    <input id="radio10" type="radio" name="estrellas" value="1">
-                    <label for="radio10">10</label>
-                </div></dd>
-            
-            <dt><h3>Precio:</h3></dt>
-                <dd>U$S 35 <input class="btn_submit" type="submit" value="Comprar"></dd>
-        </dl><br>
-    
-    
-    <footer> 
-            <div class="contenedor-total">
-                <div class="contenedor">
-            <!--COLUMNA 1 DEL FOOTER-->
+    <footer class="container-fluid">
+        <div class="col-12">
+            <div class="row contenedor-total">
+                <div class="col-xs-12 col-sm-5 col-md-4">
                     <div class="columna1">
-                        <h1>Redes Sociales</h1>
-                        <div class="fila">
-                            <a href="http://www.facebook.com"><img src="../images/logo_facebook.png"></a>
-                            <p>Síguenos en Facebook</p>
-                        </div>
-                        <div class="fila">
-                            <a href="http://www.twitter.com"><img src="../images/logo_twitter.png"></a>
-                            <p>Síguenos en Twitter</p>
-                        </div>
-                        <div class="fila">
-                            <a href="http://www.instagram.com"><img src="../images/logo_Instagram.png"></a>
-                            <p>Síguenos en Instagram</p>
-                        </div>
+                        <br>
+                        <h3 class="">Redes Sociales</h3>
+                        <br>
+                        <div class="fila"><a href="http://www.facebook.com"><img src="../images/logo_facebook.png"> Síguenos en Facebook</a></div>
+                        <br>
+                        <div class="fila"><a href="http://www.twitter.com"><img src="../images/logo_twitter.png"> Síguenos en Twitter</a></div>
+                        <br>
+                        <div class="fila"><a href="http://www.instagram.com"><img src="../images/logo_Instagram.png"> Síguenos en Instagram</a></div>
                     </div>
-                    <!--COLUMNA 2 DEL FOOTER-->
+                </div>
+                <div class="col-xs-12 col-sm-1 col-md-3">         </div>
+                <div class="col-xs-12 col-sm-6 col-md-5">       
                     <div class="columna2">
-                        <h1>Ubicación</h1>
+                        <br>
+                        <h3>Ubicación</h3>
+                        <br>
                         <div class="fila2">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.0901420808586!2d-56.17132727044581!3d-34.910450505381526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81a524c430f3%3A0x8bc559be2b555673!2sCabo+Polonio%2C+11200+Montevideo!5e0!3m2!1ses-419!2suy!4v1533527683911" width="275" height="175" style="border:0" allowfullscreen></iframe> 
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.0901420808586!2d-56.17132727044581!3d-34.910450505381526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81a524c430f3%3A0x8bc559be2b555673!2sCabo+Polonio%2C+11200+Montevideo!5e0!3m2!1ses-419!2suy!4v1533527683911"></iframe> 
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="contenedor2">
-                <div class="footer">
-                    <div class="DR">
-                        © 2018 Todos los derechos reservados 
-                    </div>
-                    <div class="politicas">
-                         | <a href="TerminosyCondiciones.html">Política de Privacidad</a>
-                         | <a href="">Información legal</a>
-                         | <a href="">Acuerdo de Suscriptor a Click </a>
-                         | <a href="">Reembolsos </a>
-                    </div>
+        </div>
+        <br>
+        <div class="col-12">
+            <div class="row contenedor-total">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <p> © 2018 Todos los derechos reservados </p>
+                </div>
+                <div class="col-xs-0 col-sm-1 col-md-3"></div>
+                <div class="col-xs-12 col-sm-8 col-md-6">
+                    | <a href="pages/TerminosyCondiciones.html">Política de Privacidad</a>
+                    | <a href="">Información legal</a>
+                    | <a href="">Acuerdo de Suscriptor a G3 </a>
+                    | <a href="">Reembolsos </a>
                 </div>
             </div>
-        </footer>
- 
+        </div>
+    </footer>
+    
 </body>
-</html>
+</html>    

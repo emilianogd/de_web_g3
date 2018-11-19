@@ -5,10 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>G3 - Iniciar Sesión</title>
-        <link rel="shortcut icon" href="../images/g3.ico">
-        <link rel="stylesheet" href="../styles/styles.css">    
+        <link rel="stylesheet" type="text/css" href="../style/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../style/styles.css">    
+       
     </head>
-    
     <style>
         body{
             margin: 0;
@@ -19,25 +19,63 @@
             height: 100vh;
         }
     </style>
-
-    <body>    
-        <div class="login-box">
-            <a href="../index.html"><img class="avatar" src="../images/g3.png" alt="G3 LOGO"></a>
-                <h1>Ingrese aquí</h1>
-            <form>
-                <!--USERNAME-->
-                <label for="Nombre_de_usuario">Usuario</label>
-                <input type="text" id="Nombre_de_usuario" required maxlength="30" placeholder="Ingrese Usuario" name="Nombre de la cuenta">
-
-                <!--PASSWORD-->
-                <label for="password">Constraseña</label>
-                <input type="password" required maxlength="30" placeholder="Ingrese Constraseña" name="Constraseña">
-
-                <input type="submit" value="Iniciar sesión">       
-
-                <a href="#">¿Olvido su contraseña?</a><br>
-                <a href="crearCuenta.html">¿No tienes cuenta?</a>
-            </form> 
+    <body>
+        <br><br><br>
+        <div class="container">
+            <div class="col-12">
+                <div class="row">
+                    <div class="text-justify col-xs-12 col-sm-4 col-md-4 col-lg-4"></div>
+                    <div class="fondoini text-justify col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <form  action="" name="formu" method="POST" onsubmit="return validarInicio();" class="fondoini">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"></div>
+                                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                        <a href="../index.html"><img class="avatar img-fluid" src="../images/g3.png" alt="G3 LOGO"></a>
+                                    </div>
+                                    <h3>Ingrese Aquí</h3>
+                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Usuario:</label>
+                                <input type="email" class="form-control" id="Usuario" name="Usuario" placeholder="Ingrese Email *">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Contraseña:</label>
+                                <input type="password" class="form-control" id="Password" name="Password" placeholder="Contraseña" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" maxlength="24">
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"></div>
+                                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                        <input type="submit" class="btn btn-secondary" id="btnIniciar" name="btnIniciar" value="Iniciar Sesión">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4"></div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="">
+                                        <a href="#">¿Olvido su contraseña?</a><br>
+                                        <a href="../pages/crearCuenta.html">¿No tienes cuenta?</a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="text-justify col-xs-12 col-sm-4 col-md-4 col-lg-4"></div>
+                </div>
+            </div>
         </div>
-    </body>
+    
+        <script type="text/javascript" src="../script/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="../script/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../script/crearCuenta.js"></script>
+  
+</body>
 </html>
+    
+      

@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>G3 - Comprar</title>
+    <link rel="stylesheet" type="text/css" href="../style/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../style/styles.css">    
+   
+</head>
+ 
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <div class="navbar-header ">
+                    <a href="../index.html"><img src="../images/g3.png"></a>
+                    <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar-1">
+                        <span class="sr-only ">Menu</span>
+                        <span class="">MENÚ</span>
+                    </button>         
+                </div>
+                <div class="collapse navbar-collapse justify-content-center" id="navbar-1">
+                    <ul class="nav navbar-nav ">
+                        <li class="nav-item"><a class="nav-link btn-outline-light" href="../pages/comunidad.html">COMUNIDAD</a></li>
+                        <li class="nav-item"><a class="nav-link btn-outline-light" href="../pages/juegos.html">JUEGOS</a></li>
+                        <li class="nav-item"><a class="nav-link btn-outline-light" href="../pages/noticias.html">NOTICIAS</a></li>
+                        <li class="nav-item"><a class="nav-link btn-outline-light" href="../pages/contáctenos.html">CONTÁCTENOS</a></li>
+                        <li>
+                            <form action="" class="navbar-form" role="search"> 
+                                <div class="form-group">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." >
+                                </div>
+                            </form>
+                        </li>
+                        <li class="nav-item"><a class="nav-link btn-outline-light" href="../pages/iniciarSesión.html">&#128100</a></li>
+                    </ul>
+                </div>        
+            </div>
+        </nav>
+    </header>
+
+    <br><br><br><br><br>
+       
+    <div class="container">
+        <div class="col-12">
+            <div class="row">
+                <div class="text-justify col-xs-12 col-sm-3 col-md-3 col-lg-3"></div>
+                <div class="text-justify col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <form action="" name="form" id="" class="fondoini" onsubmit="return validarCompra();" onchange="cantidadElement();">
+                        <br>
+                        <h3 class="text-center">COMPRAR JUEGO</h3>
+                        <br>
+                        <div class="form-group">
+                            <select class="form-control" id="selectJuego" placeholder="Seleccione Juego" required>
+                            </select>
+                        </div>
+                        <div class="form-group" >
+                            <input type="number" class="form-control" id="cantidadJuegos" min="0" pattern="^[0-9]+" required placeholder="Elija cantidad">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="selectFormato" onChange="mostrar(this.value);" placeholder="Seleccione Foramto" required>
+                                <option value="digital">DIGITAL</option>
+                                <option value="fisico">CD/DVD</option>
+                            </select>
+                        </div>
+                        <div id="fisico" class="form-group" style="display: none;">
+                            <select class="form-control" id="selectEnvio" placeholder="Seleccione Envio" required>
+                                <option value="comun">COMÚN (0.5% del costo)</option>
+                                <option value="especial">ESPECIAL (2% del costo)</option>
+                                <option value="premium">PREMIUM (5% del costo)</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <div class="form-group" >
+                                    <h5 class="form-control text-center">Precio <small>(s/i)</small></h5>
+                                </div>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                <div class="form-group">
+                                    <p class="form-control text-center">$</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                <div class="form-group">
+                                    <p class="form-control text-center" id="calculoSinI"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <div class="form-group" >
+                                    <h5 class="form-control text-center">Envio </h5>
+                                </div>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                <div class="form-group">
+                                    <p class="form-control text-center">$</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                <div class="form-group">
+                                    <p class="form-control text-center" id="precioEnvio"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <div class="form-group" >
+                                    <h5 class="form-control text-center">I.V.A.</h5>
+                                </div>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                <div class="form-group">
+                                    <p class="form-control text-center">$</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                <div class="form-group">
+                                    <p class="form-control text-center" id="precioIVA"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <div class="form-group" >
+                                    <h5 class="form-control text-center">Precio Total</h5>
+                                </div>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                <div class="form-group">
+                                    <p class="form-control text-center">$</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                <div class="form-group">
+                                    <p class="form-control text-center" id="precioTotal"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                <div class="form-group" >
+                                    <input class="form-control text-center" id="compraNombre" placeholder="Nombre *" required>
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                                <div class="form-group">
+                                    <input class="form-control text-center" id="compraEmail" placeholder="Email *" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="selectPago" placeholder="Metodo de pago" required>
+                                <option value="santander">SANTANDER</option>
+                                <option value="itau">ITAU</option>
+                                <option value="alfabrou">ALFABROU</option>
+                                <option value="redbrou">REDBROU</option>
+                                <option value="scotiabank">SCOTIABANK</option>
+                                <option value="visa">VISA</option>
+                                <option value="mastercard">MASTERCARD</option>
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <div class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <input type="reset" class="btn btn-secondary" id="btn" name="btn" value="Cancelar">
+                                <input type="submit" class="btn btn-secondary" id="btn" name="btn" value="Comprar">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="text-justify col-xs-12 col-sm-3 col-md-3 col-lg-3"></div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <footer class="container-fluid">
+        <div class="col-12">
+            <div class="row contenedor-total">
+                <div class="col-xs-12 col-sm-5 col-md-4">
+                    <div class="columna1">
+                        <br>
+                        <h3 class="">Redes Sociales</h3>
+                        <br>
+                        <div class="fila"><a href="http://www.facebook.com"><img src="../images/logo_facebook.png"> Síguenos en Facebook</a></div>
+                        <br>
+                        <div class="fila"><a href="http://www.twitter.com"><img src="../images/logo_twitter.png"> Síguenos en Twitter</a></div>
+                        <br>
+                        <div class="fila"><a href="http://www.instagram.com"><img src="../images/logo_Instagram.png"> Síguenos en Instagram</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-1 col-md-3">         </div>
+                <div class="col-xs-12 col-sm-6 col-md-5">       
+                    <div class="columna2">
+                        <br>
+                        <h3>Ubicación</h3>
+                        <br>
+                        <div class="fila2">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.0901420808586!2d-56.17132727044581!3d-34.910450505381526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81a524c430f3%3A0x8bc559be2b555673!2sCabo+Polonio%2C+11200+Montevideo!5e0!3m2!1ses-419!2suy!4v1533527683911"></iframe> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="col-12">
+            <div class="row contenedor-total">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <p> © 2018 Todos los derechos reservados </p>
+                </div>
+                <div class="col-xs-0 col-sm-1 col-md-3"></div>
+                <div class="col-xs-12 col-sm-8 col-md-6">
+                    | <a href="pages/TerminosyCondiciones.html">Política de Privacidad</a>
+                    | <a href="">Información legal</a>
+                    | <a href="">Acuerdo de Suscriptor a G3 </a>
+                    | <a href="">Reembolsos </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="../script/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="../script/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../script/crearCuenta.js"></script>
+    <script type="text/javascript" src="../script/comprar.js"></script>
+
+</body>
+</html>
