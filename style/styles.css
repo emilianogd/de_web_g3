@@ -7,11 +7,19 @@ body{
     margin: 0;
 }
 
+.dropdown:hover>.dropdown-menu{
+    display: block;
+}
+
 .navbar, .header, footer{
     background:#333;
 }
 .container h2{
     color: beige;
+}
+
+.dropdown-menu{
+    background: #333
 }
 .navbar-toggler{
     color: white;
