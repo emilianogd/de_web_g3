@@ -25,7 +25,6 @@ function validar(){
     localStorage.setItem("Contraseña", contrasenia);
     localStorage.setItem("reContraseña", recontrasenia);
 
-
     if(nombre=== ""){//Validar el nombre no este vacio.
         alert("Nombre vacio");
         return false;
@@ -67,8 +66,6 @@ function validarInicio(){
         return false;    
     }
     alert("¡Bienvenido!");
-    
-    
 }
 
 function validarCompra(){
@@ -86,6 +83,4 @@ function validarCompra(){
         return false;
     }
     alert("Compra Exitosa");
-
 }
-

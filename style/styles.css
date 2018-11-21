@@ -6,12 +6,10 @@ body{
     background-color: #ADABAB;
     margin: 0;
 }
-
 .dropdown:hover>.dropdown-menu{
     display: block;
 }
-
-.decoracion{
+.desplegableMenu{
     text-decoration: none;
 }
 .navbar, .header, footer{
@@ -20,7 +18,6 @@ body{
 .container h2{
     color: beige;
 }
-
 .dropdown-menu{
     background: #333
 }

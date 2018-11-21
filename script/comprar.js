@@ -40,8 +40,8 @@ for (let i = 0; i < listaJuegos.length; i++) {
 }
 
 var cantidadElement = document.getElementById("cantidadJuegos");
+
 cantidadElement = function (){//Compara el juego seleccionada con los de la base de datos anterior..
-    
     if(document.getElementById("selectJuego").value==="Juego1"){
         var precioid = DatosJuegos.Juegos[0].precio*document.getElementById("cantidadJuegos").value;
         document.getElementById("calculoSinI").innerHTML = precioid;
@@ -104,7 +104,6 @@ cantidadElement = function (){//Compara el juego seleccionada con los de la base
         var precioTotal = iva + precioid;
         document.getElementById("precioTotal").innerHTML = precioTotal;
     }
-
 }
 
 function mostrar(id) {
