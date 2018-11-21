@@ -19,7 +19,7 @@
                     <a href="../index.html"><img src="../images/g3.png"></a>
                     <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar-1">
                         <span class="sr-only ">Menu</span>
-                        <span class="#">Menú</span>
+                        <span class="#">&#9776</span>
                     </button>         
                 </div>
                 <div class="collapse navbar-collapse justify-content-center" id="navbar-1">
@@ -81,7 +81,7 @@
                     </div>
                 </div>
             </aside>
-            <form class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+            <form class="col-xs-12 col-sm-8 col-md-9 col-lg-9" onsubmit="return validarContacto();">
                 <h1>Contáctenos</h1>
                 <div class="form-group">
                     <input type="text" class="form-control" id="nombrecontacto" placeholder="Nombre *" required>
@@ -90,13 +90,13 @@
                     <input type="text" class="form-control" id="apellidocontacto" placeholder="Apellido">
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="email" placeholder="E-mail *" required required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" name="E-mail">
+                    <input type="text" class="form-control" id="emailcontacto" placeholder="E-mail *" required required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" name="E-mail">
                 </div>
                 <div class="form-group">
-                    <input type="tel" class="form-control" name="email" id="email" maxlength="9" placeholder="Celular">
+                    <input type="tel" class="form-control" name="celularcontacto" id="celular" maxlength="9" placeholder="Celular">
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" id="mensaje" rows="3" placeholder="Mensaje *" required></textarea>
+                    <textarea class="form-control" id="mensajecontacto" rows="3" placeholder="Mensaje *" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-secondary" name="button">Enviar</button>
             </form>
@@ -150,5 +150,7 @@
         </div>
     </footer>
     
+    <script type="text/javascript" src="../script/contáctenos.js"></script>
+
 </body>
 </html>

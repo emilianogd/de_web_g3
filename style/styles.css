@@ -11,6 +11,9 @@ body{
     display: block;
 }
 
+.decoracion{
+    text-decoration: none;
+}
 .navbar, .header, footer{
     background:#333;
 }
